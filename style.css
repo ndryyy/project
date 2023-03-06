@@ -1,0 +1,77 @@
+section{
+    margin: 0;
+    padding: 30px 150px ;
+}
+
+.navbb{
+    background-color: aqua;
+}
+.navv{
+    padding: 0;
+    
+}
+#home{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background-color: bisque;
+    height: 610px;
+}
+.text{
+    margin-top: 200px;
+    align-items:center;
+    justify-content: center;
+    
+}
+.text h1{
+    width: 500px;
+    margin-bottom: 20px;
+}
+.text h6{
+    font-weight: normal;
+    border: 1px solid black;
+    width: 140px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    color: black;
+    background-color: aqua;
+}
+
+#myinfo{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+    
+    
+}
+.about{
+    width: 700px;
+    /* border: 1px solid black; */
+    text-align: justify;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width: 300px;
+    
+}
+.contact ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.contact a{
+    margin-top: 15px;
+}
+
+.skill-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    
+}
+.card{
+    padding: 10px;
+}
