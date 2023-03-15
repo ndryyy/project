@@ -10,6 +10,7 @@ section{
     padding: 0;
     
 }
+/* config section home */
 #home{
     display: flex;
     justify-content: space-between;
