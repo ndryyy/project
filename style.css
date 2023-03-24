@@ -2,6 +2,15 @@ section{
     margin: 0;
     padding: 30px 150px ;
 }
+.btn{
+    border: 1px solid black;
+}
+.btn:hover{
+    animation: splitright 1s in;
+    color: white;
+    background-color: black;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
 
 .navbb{
     background-color: aqua;
@@ -10,25 +19,26 @@ section{
     padding: 0;
     
 }
+
 /* config section home */
 #home{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-; */
     margin-bottom: 50px;
     background-color: bisque;
     height: 610px;
 }
-.text{
+.hometext{
     margin-top: 200px;
-    align-items:center;
-    justify-content: center;
+    /* align-items:center; */
+    /* justify-content: center; */
     
 }
-.text h1{
+.hometext h1{
     width: 500px;
     margin-bottom: 20px;
 }
-.text h6{
+.hometext h6{
     font-weight: normal;
     border: 1px solid black;
     width: 140px;
@@ -39,12 +49,9 @@ section{
     background-color: aqua;
 }
 
+/* configurate about */
 #myinfo{
-    display: flex;
-    justify-content: space-between;
     column-gap: 16px;
-    
-    
 }
 .about{
     width: 700px;
@@ -67,6 +74,16 @@ section{
     margin-top: 15px;
 }
 
+.job-item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.job-item-detail{
+    display: none;
+}
+
+/* configurate skill */
 .skill-info{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -75,4 +92,22 @@ section{
 }
 .card{
     padding: 10px;
+}
+
+@keyframes splitright {
+    0% {
+        transform: rotate3d(0);
+    }
+    25%{
+        transform: rotate3d(25deg);
+    }
+    50%{
+        transform:rotate3d(50deg);
+    }
+    75%{
+        transform: rotate3d(75deg);
+    }
+    100%{
+        transform: rotate3d(100deg);
+    }
 }
