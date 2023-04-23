@@ -93,7 +93,37 @@ section{
 .card{
     padding: 10px;
 }
+/* configurate work */
+.work-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "pict1 pict2" "pict3 pict3";
+    border: 1px solid black;
+}
+.work-img::before{
+    z-index: -1px;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.work-img img{
+    width: 200px;
+    height: 200px;
+}
 
+
+#pict1{
+    grid-area: pict1;
+}
+#pict2{
+    grid-area: pict2;
+}
+#pict3{
+    grid-area: pict3;
+}
+
+@media only screen and (max-width: 768px){
+ 
+}
 @keyframes splitright {
     0% {
         transform: rotate3d(0);
